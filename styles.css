@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+:root {
+    --primary-color: #F4D04E;
+    --font-dark-color: #111;
+    --font-light-color: #6B6B6B;
+    --font-hover-color: #957100;
+    --font-size-big: 1.5em;
+    --font-size-small: 0.875em;
+}
+
+/*Global Styles*/
+h1, p {
+    font-family: "Figtree", sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Card Component*/
+article {
+    background-color: #fff;
+    max-width: 24em;
+    max-height: 32.625em;
+    border-radius: 20px;
+    box-shadow: 8px 8px #000;
+    border: 1px solid #000;
+    padding: 1.5em;
+}
+
+/*Header image*/
+article div {
+    text-align: center;
+}
+
+article div img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Tag*/
+article section p:first-child {
+    background-color: var(--primary-color);
+    width: fit-content;
+    font-size: var(--font-size-small);
+    font-weight: 800;
+    padding: 0.35em 0.75rem;
+    border-radius: 4px;
+    color: var(--font-dark-color);
+}
+
+/*Time*/
+article section p:nth-child(2) {
+    font-size: var(--font-size-small);
+    color: var(--font-dark-color);
+}
+
+article section h1 {
+    font-size: var(--font-size-big);
+    color: var(--font-dark-color);
+}
+
+article section h1 a {
+    &:link, &:visited {
+        color: var(--font-dark-color);
+    }
+
+    &:focus-visible {
+        outline: 4px solid var(--primary-color);
+    }
+
+    &:hover {
+        color: var(--font-hover-color);
+    }
+
+    &:active {
+        color: var(--font-light-color);
+    }
+
+}
+
+/*Detail Paragraph*/
+article section p:last-child {
+    color: var(--font-light-color);
+    line-height: 1.5;
+    padding-right: 0.48em;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer img {
+    width: 2em;
+    height: 2em;
+}
+
+footer p {
+    font-weight: 800;
+    font-size: var(--font-size-small);
+}
