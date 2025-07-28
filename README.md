@@ -17,4 +17,5 @@ Users should be able to:
 | ![My Solution](./solution.jpg) | ![Goal](./goal.jpg) |
 
 ### Links
+- [Submission Page](https://www.frontendmentor.io/solutions/blog-preview-card-pure-css-GT2ZIpqJCi)
 - [Live Site](https://blankztheather.github.io/blog-challenge/)
